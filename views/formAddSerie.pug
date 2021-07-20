@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  form(method='POST')
+    p
+      | Titre: 
+      input(type='text', name='title', value='')
+      br
+      | Nombre de saisons: 
+      input(type='number', name='season', value='')
+    input(type='submit', value='Submit')

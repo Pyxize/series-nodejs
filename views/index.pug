@@ -1,5 +1,11 @@
 extends layout
 
 block content
+  script
+    console.log(allSeries)
   h1= title
-  p Welcome to #{title}
+  p Il y a #{allSeries.length} séries enregistrées.
+  a.button(href="/create", class="button") Ajouter une série
+  each serie in allSeries
+    ul
+      li= serie.name +': ' + serie.season + 'saisons'
