@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .w-full.bg-grey-lighter.mt-5.flex.flex-col.justify-center
+    form(method='POST').w-80.mx-auto.bg-white.shadow-md.rounded.p-6.mb-4
+      .mb-4
+        label(for='actor').block.text-grey-darkest.font-bold.mb-2 Acteur 
+        input(type='text', placeholder='Emilia Clarke', name='actor').shadow.border.rounded.w-full.p-2.text-xs.text-grey-darker
+      .flex.float-right
+        button(type='submit').bg-blue.text-xs.text-balck.font-bold.py-2.px-4.rounded.border-4 Submit
+  

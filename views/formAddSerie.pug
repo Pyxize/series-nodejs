@@ -1,11 +1,23 @@
 extends layout
 
 block content
-  form(method='POST')
-    p
-      | Titre: 
-      input(type='text', name='title', value='')
-      br
-      | Nombre de saisons: 
-      input(type='number', name='season', value='')
-    input(type='submit', value='Submit')
+  .w-full.bg-grey-lighter.mt-5.flex.flex-col.justify-center
+    form(method='POST').w-80.mx-auto.bg-white.shadow-md.rounded.p-6.mb-4
+      .mb-4
+        label(for='title').block.text-grey-darkest.font-bold.mb-2 Titre
+        input(type='text', placeholder='Titre', name='title').shadow.border.rounded.w-full.p-2.text-xs.text-grey-darker
+      .mb-4
+        label(for='season').block.text-grey-darkest.font-bold.mb-2 Nombre de saisons
+        input(type='number', placeholder='1', name='season').shadow.border.rounded.w-full.p-2.text-xs.text-grey-darker.mb-3
+      .mb-4
+        label(for='released_in').block.text-grey-darkest.font-bold.mb-2 Année de production
+        input(type='number', placeholder='2010', name='released_in').shadow.border.rounded.w-full.p-2.text-xs.text-grey-darker
+      .mb-4
+        label(for='original_network').block.text-grey-darkest.font-bold.mb-2 Plateforme 
+        input(type='text', placeholder='HBO', name='original_network').shadow.border.rounded.w-full.p-2.text-xs.text-grey-darker
+      .mb-4
+        label(for='actor').block.text-grey-darkest.font-bold.mb-2 Acteur 
+        input(type='text', placeholder='Emilia Clarke', name='actor').shadow.border.rounded.w-full.p-2.text-xs.text-grey-darker
+      .flex.float-right
+        button(type='submit').bg-blue.text-xs.text-balck.font-bold.py-2.px-4.rounded.border-4 Submit
+  

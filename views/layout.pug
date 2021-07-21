@@ -3,5 +3,60 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    //- link(rel='stylesheet', href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+    link(href='https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css', rel='stylesheet')
+    link(rel='stylesheet', href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
   body
+    //- nav.navbar
+    //- ul.navbar-nav.mr-auto 
+    //- li.nav-item.
+    <header class="border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4">
+  
+  <!-- Logo text or image -->
+  <div class="flex items-center justify-between mb-4 md:mb-0">
+  <a href="/">
+    <img class="w-16" src="/images/serie.png" />
+    </a>
+    <h1 class="leading-none text-2xl text-grey-darkest">
+      <a class="no-underline text-grey-darkest hover:text-black" href="/">Sérithèque</a>
+    </h1>
+
+    <a class="text-black hover:text-orange md:hidden" href="/">
+      <i class="fa fa-2x fa-bars"></i>
+    </a>
+  </div>
+  <!-- END Logo text or image -->
+  
+  //- <!-- Search field -->
+  //- <form class="mb-4 w-full md:mb-0 md:w-1/4">
+  //-   <label class="hidden" for="search-form">Search</label>
+  //-   <input class="bg-grey-lightest border-2 focus:border-orange p-2 rounded-lg shadow-inner w-full" placeholder="Search" type="text">
+  //-   <button class="hidden">Submit</button>
+  //- </form>
+  //- <!-- END Search field -->
+
+  
+  <!-- Add serie -->
+  a(href="/create", class="button") Ajouter une série
+  <!-- END Search field -->
+
+
+  <!-- Global navigation -->
+  //- <nav>
+  //-   <ul class="list-reset md:flex md:items-center">
+  //-     <li class="md:ml-4">
+  //-       <a class="block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">Products</a>
+  //-     </li>
+  //-     <li class="md:ml-4">
+  //-       <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">About</a>
+  //-     </li>
+  //-     <li class="md:ml-4">
+  //-       <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">Contact</a>
+  //-     </li>
+  //-   </ul>
+  //- </nav>
+  <!-- END Global navigation -->
+
+</header>
     block content
+    

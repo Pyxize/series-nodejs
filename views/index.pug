@@ -4,8 +4,14 @@ block content
   script
     console.log(allSeries)
   h1= title
-  p Il y a #{allSeries.length} séries enregistrées.
-  a.button(href="/create", class="button") Ajouter une série
+  p.mb-4.mt-4.ml-4.text-2xl Voici les #{allSeries.length} séries enregistrées. Il est possible de cliquer sur l'une d'entre elles pour obtenir plus d'informations.
+  //- a(href="/create", class="button") Ajouter une série
   each serie in allSeries
     ul
-      li= serie.name +': ' + serie.season + 'saisons'
+      li.bg-white.bg-gray-100.text-gray-800.font-semibold.py-2.px-4.border.border-gray-400.rounded.shadow.flex.items-center.justify-between
+        a.li(href="/detail/" + serie.id)=serie.name + ' : ' + serie.season + ' saisons'
+        a(href="/delete/" + serie.name)
+          i.fas.fa-trash
+
+
+        

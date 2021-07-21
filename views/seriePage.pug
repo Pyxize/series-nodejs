@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  each s in serie
+    h1.text-3xl.my-2=s.name
+    p.mb-2.ml-4 Nombre de saison : #{s.season}
+    p.mb-2.ml-4 Année de sortie : #{s.released_in}
+    p.mb-2.ml-4 Plateforme de diffusion : #{s.original_network}
+    p.mb-2.ml-4 Les acteurs de la série :
+  each actor in actors
+    ul.ml-4.mb-6
+      li.list-disc.ml-12.mb-2=actor.name
+  a.bg-blue.text-xs.text-balck.font-bold.py-2.px-4.rounded.border-4(href="/addActor/" + serie[0].id) Ajouter un acteur
+
